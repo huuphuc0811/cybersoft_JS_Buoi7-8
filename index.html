@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BaiTap_JS_Buổi7,8</title>
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Bài Tập JS Buổi 7 - 8</h2>
+        <div class="form-group">
+            <label for="inputArray">Nhập số nguyên:</label>
+            <div class="form-input">
+                <input type="text" id="inputArray" placeholder="Ví dụ: 1, 2, 3, -5">
+                <button id="btn-form">Thêm mảng</button>
+            </div>
+        </div>
+        <div class="array-display">
+            Mảng hiện tại: <span id="arrayDisplay">[]</span>
+        </div>
+        <div class="form-group">
+            <label for="chonChucNang">Chọn chức năng:</label>
+            <select id="chonChucNang">
+                <option value="1">1. Tổng các số dương trong mảng</option>
+                <option value="2">2. Đếm có bao nhiêu số dương trong mảng</option>
+                <option value="3">3. Tìm số nhỏ nhất trong mảng</option>
+                <option value="4">4. Tìm số dương nhỏ nhất trong mảng</option>
+                <option value="5">5. Tìm số chẵn cuối cùng trong mảng</option>
+                <option value="6">6. Đổi chỗ 2 giá trị trong mảng theo vị trí</option>
+                <option value="7">7. Sắp xếp mảng theo thứ tự tăng dần</option>
+                <option value="8">8. Tìm số nguyên tố đầu tiên trong mảng</option>
+                <option value="9">9. Tìm xem trong mảng phu có bao nhiêu số nguyên</option>
+                <option value="10">10. So sánh số lượng số dương và âm</option>
+            </select>
+        </div>
+        <div class="form-group" id="extraInput" style="display: none;">
+            <label for="inputExtra">Nhập mảng số thực:</label>
+            <div class="form-input">
+                <input type="text" id="inputExtra" placeholder="Ví dụ: 2.5, -3.1, 4">
+                <button id="btn-form-fun9">Thêm mảng</button>
+            </div>
+            <div class="array-display__fun9">
+                Mảng số thực hiện tại: <span id="arrayDisplay-fun9">[]</span>
+            </div>
+        </div>
+        <div class="form-group" id="extraInput_6" style="display: none;">
+            <div class="form-group-func6">
+                <div>
+                    <label for="inputExtra_6">Nhập vị trí thứ nhất</label>
+                    <input type="text" id="inputViTri1">
+                </div>
+                <div>
+                    <label for="inputExtra_6">Nhập vị trí thứ hai</label>
+                    <input type="text" id="inputViTri2">
+                </div>
+            </div>
+        </div>
+        <button onclick="xuLyChucNang()">Thực hiện</button>
+        <div class="result" id="ketQua"></div>
+    </div>
+
+
+    <script src="./src/main.js"></script>
+</body>
+
+</html>
