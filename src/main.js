@@ -52,7 +52,7 @@ function countSoDuong(arr) {
     let count = 0;
     let lengthArr = arr.length;
     for (let i = 0; i <= lengthArr; i++) {
-        if (arr[i] % 2 === 0) {
+        if (arr[i] > 0) {
             count++;
         }
     }
@@ -74,7 +74,7 @@ function minSoDuong(arr) {
     let min = arr[0];
     let lengthArr = arr.length;
     for (let i = 0; i <= lengthArr; i++) {
-        if (arr[i] % 2 === 0) {
+        if (arr[i] > 0) {
             if (min > arr[i]) {
                 min = arr[i];
             }
